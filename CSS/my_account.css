@@ -1,0 +1,103 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body {
+    margin: 0 20px;
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.my-account {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 1fr;
+    place-items: center;
+}
+
+
+.my-account-container__content {
+    align-self: start;
+}
+
+.my-account-container__title {
+    font-size: var(--lg);
+    margin: 50px 0px;
+}
+
+.my-account-container__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-account-container__label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.my-account-container__text {
+    /* background-color: var(--text-input-field); */
+    color: var(--very-light-pink);
+    height: 30px;
+    font-size: var(--md);
+    padding: 8px 0px;
+    margin-bottom: 16px;
+}
+
+/*La configuración de los botones se encuentra en el archivo button.css*/
+
+.button__secondary-button {
+    align-self: end;
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+}
+
+@media (max-width:290px)  {
+    .my-account {
+        width: 236px;
+    }
+    .my-account-container {
+        width: 100%;
+    }
+}
+@media (min-width:291px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    .my-account {
+        width: 100%;
+    }
+    .my-account-container {
+        width: 100%;
+    }
+}
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    .my-account {
+        width: 100%;
+    }
+    .my-account-container {
+        width: 280px;
+    }
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    .my-account {
+        grid-template-rows: 50px 1fr;
+        align-content: center;
+    }
+    .button__secondary-button {
+        margin-top: 42px;
+    }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

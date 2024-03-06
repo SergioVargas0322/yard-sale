@@ -1,0 +1,117 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body {
+    margin: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.account {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.account-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px 8fr 1fr;
+    /* width: 280px; */
+    width: 100%;
+    height: 100vh;
+}
+
+.account-container__nav {
+    display: grid;
+    justify-content: space-between;   
+    grid-template-columns: 1fr 8fr 1fr;
+    place-content: center;
+}
+
+.account-container__nav a {
+    display: grid;
+    place-content: center;
+}
+
+.account-container__logo {
+    width: 120px;
+    align-self: end;
+    justify-self: center;
+}
+
+.account-container__content {
+    align-self: start;
+}
+
+
+.account-container__title {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    margin: 50px 0px;
+}
+
+.account-container__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-container__label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.account-container__input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 16px;
+}
+
+/*La configuración de los botones se encuentra en el archivo button.css*/
+
+.button__primary-button {
+    align-self: end;
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    .account-container {
+        width: 100%;
+    }
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    .account-container {
+        width: 100%;
+        grid-template-rows: auto;
+        align-content: center;
+    }
+    
+    .account-container__logo {
+        display: none;
+    }
+
+    .button__secondary-button {
+        margin-top: 42px;
+    }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }

@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.login {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px auto;
+  place-items: center;
+}
+
+/* .login-nav {
+    width: 100%;
+    height: 80px;
+    display: none;
+    place-items: center;
+    grid-template-columns: 250px auto 250px;
+    grid-template-rows: 1fr;
+  } */
+
+/* .login-nav__page-logo {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .login-nav__page-logo img {
+    height: var(--logo);
+  }
+  
+  .login-nav__elements {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .login-nav__elements img {
+    display: flex;
+  }
+  
+  .login-nav__elements ol {
+      width: 100%;
+      display:flex;  
+    list-style:none;
+    }
+  
+  .login-nav__elements li {
+    display: none;
+    padding: 0 20px 0 0;
+  } */
+
+/* .login-nav__account-shpcart {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 1fr;
+    margin-right: 40px;
+  }
+  
+  .login-nav__account-shpcart a {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .login-nav__account-shpcart a:nth-child(1) {
+    color: var(--hospital-green);
+  } */
+
+.login-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 2fr 3fr 1fr;
+  width: 280px;
+  height: 100vh;
+}
+
+/*La configuración de los botones se encuentra en el archivo button.css*/
+
+@media (min-width: 1px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .login-container {
+    width: 300px;
+  }
+  .login-nav {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 250px auto 250px;
+    grid-template-rows: 80px;
+    position: sticky;
+    top: 0;
+    align-self: start;
+  }
+  .login-nav__page-logo img {
+    height: var(--logo-s);
+  }
+  #menu-control:checked ~ ol {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 92px;
+    left: 20px;
+  }
+  #menu-control:checked ~ ol > li {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .login-nav__elements li:hover a {
+    color: var(--hospital-green);
+  }
+}
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .login-container {
+    width: 300px;
+  }
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  /* .login-nav {
+      display: grid;
+    } */
+  .login {
+    grid-template-rows: 80px auto;
+  }
+  .login-container {
+    width: 380px;
+    height: 100%;
+    grid-template-rows: auto;
+    align-content: center;
+  }
+  .login-container__logo {
+    display: none;
+  }
+  .button__secondary-button {
+    margin-top: 42px;
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  /* .login-nav {
+      grid-template-columns: 250px auto 250px;
+    }
+    .login-nav__elements {
+      display: flex;
+    }
+    .login-nav__elements li {
+      display: block;
+      padding: 0 20px 0 0;
+    } */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}

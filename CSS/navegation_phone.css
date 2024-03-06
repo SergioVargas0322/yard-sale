@@ -1,0 +1,124 @@
+.global-nav {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 250px auto 250px;
+    grid-template-rows: 80px;
+    position: sticky;
+    top: 0;
+    align-self: start;
+  }
+
+.global-nav__page-logo {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.global-nav__page-logo img {
+  height: var(--logo);
+}
+
+.global-nav__elements {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.global-nav__elements label {
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+#menu-control {
+  display: none;
+}
+
+.global-nav__elements ol {
+  width: 100%;
+  display: flex;
+  padding: 0 0 0 0;
+  list-style: none;
+}
+
+.global-nav__elements li {
+  display: none;
+  padding: 0 20px 0 0;
+}
+
+.global-nav__account-shopping-cart {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 40px;
+  grid-template-rows: 1fr;
+  margin-right: 40px;
+}
+
+.global-nav__account-shopping-cart a {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.global-nav__account-shopping-cart a:nth-child(1) {
+  color: var(--hospital-green);
+}
+
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .global-nav {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 250px auto 250px;
+    grid-template-rows: 80px;
+    position: sticky;
+    top: 0;
+    align-self: start;
+  }
+  #menu-control:checked ~ ol {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 92px;
+    left: 20px;
+  }
+  #menu-control:checked ~ ol > li {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .global-nav__elements li:hover a {
+    color: var(--hospital-green);
+  }
+  /* ::-webkit-scrollbar {
+      display: none;
+    } */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .global-nav {
+    grid-template-columns: 250px auto 250px;
+  }
+  .global-nav__elements {
+    display: flex;
+  }
+  .global-nav__elements label {
+    display: none;
+  }
+  .global-nav__elements li {
+    display: block;
+    padding: 0 20px 0 0;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
