@@ -13,13 +13,13 @@
   place-content: center;
   justify-content: space-between;
   grid-template-columns: 50px 1fr 50px;
+  /* grid-template-rows: 250px; */
   grid-template-rows: 50px;
 
   position: sticky;
   top: 0;
   align-self: start;
 }
-
 
 .global-nav__page-left-logo {
   display: none;
@@ -62,18 +62,60 @@
   width: 100%;
   display: grid;
   align-items: end;
-  grid-template-columns: 1fr;
+  grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr;
-  /* margin-right: 40px; */
+}
+
+.name-container {
+  height: 55px;
+  display: none;
+}
+
+.name {
+  height: 20px;
+  font-size: var(--md);
+  color: var(--dark);
+  align-self: end;
+  position: relative;
+  top: 16px;
+  z-index: 2;
+}
+
+.options-container {
+  display: none;
+  position: relative;
+  top: 20px;
+  left: 38px;
+  width: 150px;
+  background-color: var(--white);
+  z-index: 1;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px var(--very-light-pink);
+}
+
+.options {
+  padding: 20px 10px 0 0;
+  list-style: none;
+}
+
+.my_orders__button {
+  color: var(--black);
+}
+
+.my_account__button {
+  margin-top: 10px;
+  color: var(--black);
 }
 
 .global-nav__account-shopping-cart a {
   display: flex;
   flex-direction: row-reverse;
+  place-self: center;
 }
 
-.global-nav__account-shopping-cart a:nth-child(1) {
+.home1__button {
   color: var(--hospital-green);
+  margin-top: 40px;
 }
 
 @media (min-width: 320px) {
@@ -112,6 +154,13 @@
   /* ::-webkit-scrollbar {
     display: none;
   } */
+  .name-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .name-container:hover .options-container {
+    display: block;
+  }
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */

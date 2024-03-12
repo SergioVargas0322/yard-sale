@@ -1,87 +1,35 @@
 body {
-  margin: 0;
+  margin: 0 20px;
+  height: 100vh;
   font-family: "Quicksand", sans-serif;
 }
 
 .login {
   width: 100%;
-  height: 100vh;
-  display: grid;
-  place-items: center;
-}
-
-/* .login-nav {
-  width: 100%;
-  height: 80px;
-  display: none;
-  place-items: center;
-  grid-template-columns: 250px auto 250px;
-  grid-template-rows: 1fr;
-} */
-
-/* .login-nav__page-logo {
-  width: 100%;
-  display: grid;
-  place-items: center;
-}
-
-.login-nav__page-logo img {
-  height: var(--logo);
-}
-
-.login-nav__elements {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.login-nav__elements img {
-  display: flex;
-}
-
-.login-nav__elements ol {
-    width: 100%;
-    display:flex;  
-  list-style:none;
-  }
-
-.login-nav__elements li {
-  display: none;
-  padding: 0 20px 0 0;
-} */
-
-/* .login-nav__account-shpcart {
-  width: 100%;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 40px;
-  grid-template-rows: 1fr;
-  margin-right: 40px;
-}
-
-.login-nav__account-shpcart a {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.login-nav__account-shpcart a:nth-child(1) {
-  color: var(--hospital-green);
-} */
-
-.login-container {
+  height: 100%;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 2fr 3fr 1fr;
-  width: 280px;
-  height: 100vh;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+
+.login-nav {
+  display: none;
+}
+
+.login-container {
+  width: 300px;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 240px 1fr 80px;
 }
 
 .login-container__logo {
-  width: 180px;
-  align-self: end;
-  justify-self: center;
-  padding-bottom: 40px;
+  width: 200px;
+  /* align-self: end;
+  justify-self: center; */
+  place-self: end center;
+  padding-bottom: 60px;
 }
 
 .login-container__content {
@@ -99,17 +47,22 @@ body {
   margin-bottom: 4px;
 }
 
-.login-container__input {
+.login-container__text {
   background-color: var(--text-input-field);
   border: none;
+  color: var(--very-light-pink);
   border-radius: 8px;
   height: 30px;
   font-size: var(--md);
-  padding: 6px;
-  margin-bottom: 16px;
+  padding: 8px 0px;
+  margin-bottom: 28px;
 }
 
 /*La configuración de los botones se encuentra en el archivo button.css*/
+
+.button__primary-button {
+  margin-top: 30px;
+}
 
 .login-container__fg-password {
   text-align: center;
@@ -120,34 +73,46 @@ body {
 }
 
 .button__secondary-button {
-  align-self: end;
-  margin-bottom: 10%;
+  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+  place-content: center;
+  place-self: end center;
 }
 
-@media (min-width: 320px) {
-  /* smartphones, iPhone, portrait 480x320 phones */
-  .login-container {
+@media (max-width: 340px) {
+  .login {
     width: 300px;
   }
 }
-@media (min-width: 481px) {
+@media (min-width: 341px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .login {
+    width: 100%;
+  }
+  .login-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 420px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .login-container {
+    width: 380px;
+  }
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
   /* .login-nav {
-    display: grid;
-  } */
+      display: grid;
+    } */
   .login {
-    grid-template-rows: 80px auto;
+    grid-template-rows: 70px 1fr;
+  }
+  .login-nav {
+    display: grid;
   }
   .login-container {
-    width: 380px;
-    height: 100%;
     grid-template-rows: auto;
     align-content: center;
   }
@@ -155,7 +120,7 @@ body {
     display: none;
   }
   .button__secondary-button {
-    margin-top: 42px;
+    margin-top: 40px;
   }
 }
 @media (min-width: 961px) {
@@ -163,16 +128,6 @@ body {
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
-  /* .login-nav {
-    grid-template-columns: 250px auto 250px;
-  }
-  .login-nav__elements {
-    display: flex;
-  }
-  .login-nav__elements li {
-    display: block;
-    padding: 0 20px 0 0;
-  } */
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */

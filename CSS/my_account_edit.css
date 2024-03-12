@@ -4,7 +4,7 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-.my-account {
+.my-account-edit {
     width: 100%;
     height: 100%;
     display: grid;
@@ -12,35 +12,35 @@ body {
     grid-template-rows: 70px 1fr;
     place-items: center;
 }
-
-.my-account-container {
+.my-account-edit-container {
     width: 300px;
     display: grid;
     grid-template-rows: 1fr 80px;
 }
 
-.my-account-container__content {
+.my-account-edit-container__content {
     align-self: start;
 }
 
-.my-account-container__title {
+.my-account-edit-container__title {
     font-size: var(--lg);
     margin: 70px 0px 50px 0px;
 }
 
-.my-account-container__form {
+.my-account-edit-container__form {
     display: flex;
     flex-direction: column;
 }
 
-.my-account-container__label {
+.my-account-edit-container__label {
     font-size: var(--sm);
     font-weight: bold;
     margin-bottom: 4px;
 }
 
-.my-account-container__text {
-    /* background-color: var(--text-input-field); */
+.my-account-edit-container__text {
+    background-color: var(--text-input-field);
+    border: none;
     color: var(--very-light-pink);
     border-radius: 8px;
     height: 30px;
@@ -51,7 +51,7 @@ body {
 
 /*La configuración de los botones se encuentra en el archivo button.css*/
 
-.my-account__button {
+.my-account-edit__button {
     margin-bottom: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -60,16 +60,16 @@ body {
 }
 
 @media (max-width:290px)  {
-    .my-account {
+    .my-account-edit {
         width: 236px;
     }
-    .my-account-container {
+    .my-account-edit-container {
         justify-self: start;
         justify-items: start;
     }
 }
 @media (min-width:291px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
-    .my-account {
+    .my-account-edit {
         width: 100%;
     }
 }
@@ -77,17 +77,17 @@ body {
     
 }
 @media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-    .my-account-container {
+    .my-account-edit-container {
         width: 100%;
         height: 100%;
     }
 }
 @media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-    .my-account {
+    .my-account-edit {
         grid-template-rows: 70px 1fr;
         align-content: center;
     }
-    .button__secondary-button {
+    .button__primary-button {
         margin-top: 42px;
     }
 }

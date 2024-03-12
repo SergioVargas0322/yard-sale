@@ -4,7 +4,7 @@
     border: none;
     border-radius: 8px;
     color: var(--white);
-    height: 40px;
+    height: 45px;
     width: 100%;
     cursor: pointer;
     font-weight: bold;
@@ -16,7 +16,7 @@
     border: solid var(--hospital-green) 1px;
     border-radius: 8px;
     color: var(--hospital-green);
-    height: 40px;
+    height: 45px;
     width: 100%;
     cursor: pointer;
     font-weight: 500;
