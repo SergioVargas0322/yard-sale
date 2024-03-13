@@ -12,6 +12,7 @@ body {
     grid-template-rows: 70px 1fr;
     place-items: center;
 }
+
 .my-account-edit-container {
     width: 300px;
     display: grid;

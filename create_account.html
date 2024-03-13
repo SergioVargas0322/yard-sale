@@ -2,82 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=div, initial-scale=1.0">
-    <title>Yard Sale</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=div, initial-scale=1.0" />
+  <title>Yard Sale</title>
 
-    <link rel="shortcut icon" href="Platzi_YardSale_Logos/favicon_bota_fora.svg" type="img">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="Platzi_YardSale_Logos/favicon_bota_fora.svg" type="img" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="CSS/button.css">
-    <link rel="stylesheet" href="CSS/variables.css">
-    <link rel="stylesheet" href="CSS/navegation.css">
-    <link rel="stylesheet" href="CSS/create_account.css">
+  <link rel="stylesheet" href="CSS/button.css" />
+  <link rel="stylesheet" href="CSS/variables.css" />
+  <link rel="stylesheet" href="CSS/navegation.css" />
+  <link rel="stylesheet" href="CSS/create_account.css" />
 </head>
 
 <body>
-    <div class="create-account">
-        <div class="create-account-nav global-nav">
-            <a href="home1.html"
-                class="create-account-nav__page-left-logo global-nav__page-logo global-nav__page-left-logo"><img
-                    src="Platzi_YardSale_Logos/logo_yard_sale.svg" alt="Page logo" /></a>
-            <nav class="create-account-nav__elements global-nav__elements">
-                <input type="checkbox" id="menu-control" />
-                <label class="btn" for="menu-control"><img src="Platzi_YardSale_Icons/icon_menu.svg" alt="Menu"
-                        id="btnLeft" /></label>
-                <ol>
-                    <li>
-                        <a href="home1.html" class="create-account-nav__button button__nav-button">All</a>
-                    </li>
-                    <li>
-                        <a href="home1.html" class="create-account-nav__button button__nav-button">Clothes</a>
-                    </li>
-                    <li>
-                        <a href="home1.html"
-                            class="create-account-nav__button button__nav-button">Electronics</a>
-                    </li>
-                    <li>
-                        <a href="home1.html"
-                            class="create-account-nav__button button__nav-button">Furniture</a>
-                    </li>
-                    <li>
-                        <a href="home1.html" class="create-account-nav__button button__nav-button">Toys</a>
-                    </li>
-                    <li>
-                        <a href="home1.html" class="create-account-nav__button button__nav-button">Others</a>
-                    </li>
-                </ol>
-            </nav>
-            <a href="home1.html"
-                class="create-account-nav__page-central-logo global-nav__page-logo global-nav__page-central-logo"><img
-                    src="Platzi_YardSale_Logos/logo_yard_sale.svg" alt="Page logo" /></a>
-            <div class="create-account-nav__account-shopping-cart global-nav__account-shopping-cart">
-                <a href="shopping_cart1.html" class="create-account-nav__button button__nav-button"><img
-                        src="Platzi_YardSale_Icons/icon_shopping_cart.svg" alt="Shopping cart icon" /></a>
-            </div>
+  <div class="create-account">
+    <div class="create-account-nav global-nav">
+      <a href="index.html"
+        class="create-account-nav__page-left-logo global-nav__page-logo global-nav__page-left-logo"><img
+          src="Platzi_YardSale_Logos/logo_yard_sale.svg" alt="Page logo" /></a>
+      <nav class="create-account-nav__elements global-nav__elements">
+        <input type="checkbox" id="menu-control" />
+        <label class="menu-control__img" for="menu-control"><img src="Platzi_YardSale_Icons/icon_menu.svg" alt="Menu"
+            id="btnLeft" /></label>
+        <ol class="create-account-nav__buttons global-nav__buttons">
+          <li>
+            <a href="index.html" class="create-account-nav__button button__nav-button">All</a>
+          </li>
+          <li>
+            <a href="index.html" class="create-account-nav__button button__nav-button">Clothes</a>
+          </li>
+          <li>
+            <a href="index.html" class="create-account-nav__button button__nav-button">Electronics</a>
+          </li>
+          <li>
+            <a href="index.html" class="create-account-nav__button button__nav-button">Furniture</a>
+          </li>
+          <li>
+            <a href="index.html" class="create-account-nav__button button__nav-button">Toys</a>
+          </li>
+          <li>
+            <a href="index.html" class="create-account-nav__button button__nav-button">Others</a>
+          </li>
+        </ol>
+      </nav>
+      <a href="index.html"
+        class="create-account-nav__page-central-logo global-nav__page-logo global-nav__page-central-logo"><img
+          src="Platzi_YardSale_Logos/logo_yard_sale.svg" alt="Page logo" /></a>
+      <div class="create-account-nav__account-shopping-cart global-nav__account-shopping-cart">
+        <div class="name-options">
+          <div class="name-container">
+            <a href="login.html" class="name create_account__button button__nav-button global-shopping__button">Sign
+              in</a>
+          </div>
         </div>
-        <div class="create-account-container">
-            <div class="create-account-container__content">
-                <h1 class="create-account-container__title">My account</h1>
-                <form class="create-account-container__form" action="/">
-                    <label class="create-account-container__label" for="name">Name</label>
-                    <input class="create-account-container__text" id="name" type="text" placeholder="YardSale" />
 
-                    <label class="create-account-container__label" for="email">Email address</label>
-                    <input class="create-account-container__text" id="email" type="email"
-                        placeholder="yardsale@example.com" />
-
-                    <label class="create-account-container__label" for="password">Password</label>
-                    <input class="create-account-container__text" id="password" type="password"
-                        placeholder="********" />
-                </form>
-            </div>
-            <a href="my_account.html" class="create-account__button button__primary-button">Create account</a>
-            <!-- <button class="account-container__button button__secondary-button" type="submit">Sign up</button> -->
-        </div>
+        <a href="shopping_cart1.html" class="create-account-nav__button button__nav-button"><img
+            src="Platzi_YardSale_Icons/icon_shopping_cart.svg" alt="Shopping cart icon" /></a>
+      </div>
     </div>
+    <div class="create-account-container">
+      <div class="create-account-container__content">
+        <h1 class="create-account-container__title">My account</h1>
+        <form class="create-account-container__form" action="/">
+          <label class="create-account-container__label" for="name">Name</label>
+          <input class="create-account-container__text" id="name" type="text" placeholder="" />
+
+          <label class="create-account-container__label" for="email">Email address</label>
+          <input class="create-account-container__text" id="email" type="email" placeholder="" />
+
+          <label class="create-account-container__label" for="password">Password</label>
+          <input class="create-account-container__text" id="password" type="password" placeholder="" />
+        </form>
+      </div>
+      <a href="my_account.html" class="create-account__button button__primary-button">Create account</a>
+      <!-- <button class="account-container__button button__secondary-button" type="submit">Sign up</button> -->
+    </div>
+  </div>
 </body>
 
 </html>

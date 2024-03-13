@@ -1,0 +1,156 @@
+body {
+  margin: 0 20px;
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+}
+
+.home1 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 70px 1fr;
+  place-items: center;
+}
+
+/* .login-nav {
+    width: 100%;
+    height: 80px;
+    display: none;
+    place-items: center;
+    grid-template-columns: 250px auto 250px;
+    grid-template-rows: 1fr;
+  } */
+
+/* .login-nav__page-logo {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .login-nav__page-logo img {
+    height: var(--logo);
+  }
+  
+  .login-nav__elements {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .login-nav__elements img {
+    display: flex;
+  }
+  
+  .login-nav__elements ol {
+      width: 100%;
+      display:flex;  
+    list-style:none;
+    }
+  
+  .login-nav__elements li {
+    display: none;
+    padding: 0 20px 0 0;
+  } */
+
+/* .login-nav__account-shpcart {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 40px;
+    grid-template-rows: 1fr;
+    margin-right: 40px;
+  }
+  
+  .login-nav__account-shpcart a {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .login-nav__account-shpcart a:nth-child(1) {
+    color: var(--hospital-green);
+  } */
+
+.home1-container {
+  width: 300px;
+  display: grid;
+  grid-template-rows: 1fr 80px;
+}
+
+.home1-container__content {
+  align-self: start;
+}
+
+.home1-container__title {
+  font-size: var(--lg);
+  margin: 70px 0px 50px 0px;
+}
+
+.home1-container__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.home1-container__label {
+  font-size: var(--sm);
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.home1-container__text {
+  background-color: var(--text-input-field);
+  border: none;
+  color: var(--very-light-pink);
+  border-radius: 8px;
+  height: 30px;
+  font-size: var(--md);
+  padding: 8px 0px;
+  margin-bottom: 28px;
+}
+
+/*La configuración de los botones se encuentra en el archivo button.css*/
+
+.home1__button {
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  place-self: end center;
+}
+
+@media (max-width:290px)  {
+  .home1 {
+      width: 236px;
+  }
+  .home1-container {
+      justify-self: start;
+      justify-items: start;
+  }
+}
+@media (min-width:291px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+  .home1 {
+      width: 100%;
+  }
+}
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+  
+}
+@media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+  .home1-container {
+      width: 100%;
+      height: 100%;
+  }
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  .home1 {
+      grid-template-rows: 70px 1fr;
+      align-content: center;
+  }
+  .button__primary-button {
+      margin-top: 42px;
+  }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
