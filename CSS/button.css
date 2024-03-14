@@ -32,3 +32,13 @@
   font-weight: 500;
   text-decoration: none;
 }
+
+.phone-button__nav-button {
+  background-color: var(--white);
+  font-size: var(--lg);
+  color: var(--black);
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}

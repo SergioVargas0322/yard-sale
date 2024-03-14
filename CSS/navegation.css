@@ -112,7 +112,7 @@
 }
 
 .options li a {
- font-size: var(--md);
+  font-size: var(--md);
 }
 
 .my-orders-option__button {
@@ -139,13 +139,131 @@
   margin-top: 40px;
 }
 
+.phone-view {
+  width: 100%;
+  height: calc(100vh - 40px);
+  background-color: white;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.phone-view__container {
+  width: 260px;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
+.phone-global-nav__elements {
+  display: grid;
+  grid-template-rows: 1fr 0.8fr;
+} 
+
+.phone-global__title {
+  margin: 0;
+  font-size: var(--lg);
+  align-self: center;
+  padding: 0 0 0 50px;
+}
+
+.phone-global-nav__buttons {
+  width: 180px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-content: start end;
+  padding: 0 0 0 50px;
+  list-style: none;
+}
+
+.phone-global-nav__buttons li {
+  display: none;
+  width: 180px;
+  padding: 0 0 30px 0;
+}
+
+.phone-global-nav__buttons li:nth-child(6) {
+  display: none;
+  padding: 0 0 80px 0;
+}
+
+.phone-global-nav__buttons li a {
+  font-size: var(--md);
+}
+
+.phone-name-options {
+  display: grid;
+  place-content: start;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.phone-options-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-content: end start;
+  /* position: relative; */
+  /* top: 20px; */
+  /* left: 38px; */
+  /* width: 150px; */
+  background-color: var(--white);
+  /* z-index: 1; */
+}
+
+.phone-options {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  list-style: none;
+}
+
+.phone-options li {
+  padding: 30px 0 0 50px;
+}
+
+.phone-options li:nth-child(1) {
+  padding: 80px 0 0 50px;
+}
+
+.phone-options li:nth-child(3) {
+  place-self: end start;
+}
+
+.phone-options li:nth-child(4) {
+  padding: 5px 0 20px 50px;
+  place-self: end start;
+}
+
+.phone-options li a {
+  font-size: var(--md);
+  font-weight: 700;
+
+}
+
+.menu-control__img {
+  z-index: 6;
+}
+
 @media (min-width: 320px) {
   /* smartphones, iPhone, portrait 480x320 phones */
 }
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
-@media (min-width: 641px) {
+@media (max-width: 720px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  #menu-control:checked ~ div {
+    display: grid;
+  }
+  #menu-control:checked ~ div ol > li {
+    display: block;
+  }
+}
+@media (min-width: 721px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
   .global-nav {
     grid-template-columns: 200px 1fr 250px;
@@ -168,6 +286,9 @@
   #menu-control:checked ~ ol > li {
     display: block;
     padding-bottom: 10px;
+  }
+  .phone-view {
+    display: none;
   }
   .global-nav__elements li:hover a {
     color: var(--hospital-green);
