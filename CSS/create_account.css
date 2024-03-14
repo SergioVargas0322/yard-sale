@@ -1,96 +1,105 @@
 body {
-    margin: 0 20px;
-    height: 100vh;
-    font-family: 'Quicksand', sans-serif;
+  margin: 0 20px;
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
 }
 
 .create-account {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 70px 1fr;
-    place-items: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 70px 1fr;
+  place-items: center;
 }
 .create-account-container {
-    width: 300px;
-    display: grid;
-    grid-template-rows: 1fr 80px;
+  width: 380px;
+  display: grid;
+  grid-template-rows: 1fr 80px;
 }
 
 .create-account-container__content {
-    align-self: start;
+  align-self: start;
 }
 
 .create-account-container__title {
-    font-size: var(--lg);
-    margin: 70px 0px 50px 0px;
+  font-size: var(--lg);
+  margin: 70px 0px 50px 0px;
 }
 
 .create-account-container__form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .create-account-container__label {
-    font-size: var(--sm);
-    font-weight: bold;
-    margin-bottom: 4px;
+  font-size: var(--sm);
+  font-weight: bold;
+  margin-bottom: 4px;
 }
 
 .create-account-container__text {
-    background-color: var(--text-input-field);
-    border: none;
-    color: var(--very-light-pink);
-    border-radius: 8px;
-    height: 30px;
-    font-size: var(--md);
-    padding: 8px 0px;
-    margin-bottom: 28px;
+  background-color: var(--text-input-field);
+  border: none;
+  color: var(--very-light-pink);
+  border-radius: 8px;
+  height: 30px;
+  font-size: var(--md);
+  padding: 8px 0px;
+  margin-bottom: 28px;
 }
 
 /*La configuración de los botones se encuentra en el archivo button.css*/
 
 .create-account__button {
-    margin-bottom: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    place-content: center;
-    place-self: end center;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  place-self: end center;
 }
 
-@media (max-width:290px)  {
-    .create-account {
-        width: 236px;
-    }
-    .create-account-container {
-        justify-self: start;
-        justify-items: start;
-    }
+@media (max-width: 290px) {
+  .create-account {
+    width: 236px;
+  }
+  .create-account-container {
+    justify-self: start;
+    justify-items: start;
+  }
 }
-@media (min-width:291px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
-    .create-account {
-        width: 100%;
-    }
+@media (min-width: 291px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  .create-account {
+    width: 100%;
+  }
 }
-@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
-    
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
 }
-@media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-    .create-account-container {
-        width: 100%;
-        height: 100%;
-    }
+@media (max-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .create-account-container {
+    width: 100%;
+    height: 100%;
+  }
 }
-@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
-    .create-account {
-        grid-template-rows: 70px 1fr;
-        align-content: center;
-    }
-    .button__primary-button {
-        margin-top: 42px;
-    }
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .create-account {
+    grid-template-rows: 70px 1fr;
+    align-content: center;
+  }
+  .button__primary-button {
+    margin-top: 42px;
+  }
 }
-@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}

@@ -2,77 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=div, initial-scale=1.0" />
-    <title>Yard Sale</title>
-    <link rel="shortcut icon" href="Platzi_YardSale_Logos/favicon_bota_fora.svg" type="img" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=div, initial-scale=1.0" />
+  <title>Yard Sale</title>
 
-    <link rel="stylesheet" href="CSS/button.css" />
-    <link rel="stylesheet" href="CSS/variables.css" />
-    <link rel="stylesheet" href="CSS/navegation.css" />
-    <link rel="stylesheet" href="CSS/login.css" />
+  <link rel="shortcut icon" href="Platzi_YardSale_Logos/favicon_bota_fora.svg" type="img" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="CSS/button.css" />
+  <link rel="stylesheet" href="CSS/variables.css" />
+  <link rel="stylesheet" href="CSS/navegation.css" />
+  <link rel="stylesheet" href="CSS/login.css" />
 </head>
 
 <body>
-    <div class="login">
-        <div class="login-nav global-nav">
-            <a href="home1.html" class="login-nav__page-left-logo global-nav__page-logo global-nav__page-left-logo"><img
-                    src="Platzi_YardSale_Logos/logo_yard_sale.svg" alt="Page logo" /></a>
-            <nav class="login-nav__elements global-nav__elements">
-                <input type="checkbox" id="menu-control" />
-                <label class="btn" for="menu-control"><img src="Platzi_YardSale_Icons/icon_menu.svg" alt="Menu"
-                        id="btnLeft" /></label>
-                <ol>
-                    <li>
-                        <a href="home1.html" class="login-nav__button button__nav-button">All</a>
-                    </li>
-                    <li>
-                        <a href="home1.html" class="login-nav__button button__nav-button">Clothes</a>
-                    </li>
-                    <li>
-                        <a href="home1.html" class="login-nav__button button__nav-button">Electronics</a>
-                    </li>
-                    <li>
-                        <a href="home1.html" class="login-nav__button button__nav-button">Furniture</a>
-                    </li>
-                    <li>
-                        <a href="home1.html" class="login-nav__button button__nav-button">Toys</a>
-                    </li>
-                    <li>
-                        <a href="home1.html" class="login-nav__button button__nav-button">Others</a>
-                    </li>
-                </ol>
-            </nav>
-            <div class="my-account-edit-nav__account-shopping-cart global-nav__account-shopping-cart">
-                <a href="login.html" class="login-nav__button button__nav-button">Sing in</a>
-                <a href="shopping_cart1.html" class="my-account-edit-nav__button button__nav-button"><img
-                        src="Platzi_YardSale_Icons/icon_shopping_cart.svg" alt="Shopping cart icon" /></a>
-            </div>
+  <div class="login">
+    <div class="login-nav global-nav">
+      <a href="index.html" class="login-nav__page-left-logo global-nav__page-logo global-nav__page-left-logo"><img
+          src="Platzi_YardSale_Logos/logo_yard_sale.svg" alt="Page logo" /></a>
+      <nav class="login-nav__elements global-nav__elements">
+        <input type="checkbox" id="menu-control" />
+        <label class="menu-control__img" for="menu-control"><img src="Platzi_YardSale_Icons/icon_menu.svg" alt="Menu"
+            id="btnLeft" /></label>
+        <ol class="login-nav__buttons global-nav__buttons">
+          <li>
+            <a href="index.html" class="login-nav__button button__nav-button">All</a>
+          </li>
+          <li>
+            <a href="index.html" class="login-nav__button button__nav-button">Clothes</a>
+          </li>
+          <li>
+            <a href="index.html" class="login-nav__button button__nav-button">Electronics</a>
+          </li>
+          <li>
+            <a href="index.html" class="login-nav__button button__nav-button">Furniture</a>
+          </li>
+          <li>
+            <a href="index.html" class="login-nav__button button__nav-button">Toys</a>
+          </li>
+          <li>
+            <a href="index.html" class="login-nav__button button__nav-button">Others</a>
+          </li>
+        </ol>
+      </nav>
+      <a href="index.html" class="login-nav__page-central-logo global-nav__page-logo global-nav__page-central-logo"><img
+          src="Platzi_YardSale_Logos/logo_yard_sale.svg" alt="Page logo" /></a>
+      <div class="login-nav__account-shopping-cart global-nav__account-shopping-cart">
+        <div class="name-options">
+          <div class="name-container">
+            <a href="login.html" class="name index__button button__nav-button global-shopping__button">Sign
+              in</a>
+          </div>
         </div>
-        <div class="login-container">
-            <img class="login-container__logo" src="/Platzi_YardSale_Logos/logo_yard_sale.svg" alt="Page logo" />
-            <div class="login-container__content">
-                <form class="login-container__form" action="/">
-                    <label class="login-container__label" for="email">Email address</label>
-                    <input id="email" class="login-container__text login-container__text-email" type="email"
-                        placeholder="yardsale@example.com" />
-                    <label class="login-container__label" for="password">Password</label>
-                    <input id="password" class="login-container__text login-container__text-password" type="password"
-                        placeholder="********" />
-                    <input class="login-container__button button__primary-button" type="submit" value="Log in" />
-                    <a class="login-container__fg-password" href="password_recovery1.html"
-                        title="Forgot my password">Forgot my
-                        password</a>
-                </form>
-            </div>
-            <a href="create_account.html" class="login-container__button button__secondary-button">Sign
-                up</a>
-            <!-- <button class="login-container__button button__secondary-button" type="submit">Sign up</button> -->
-        </div>
+        <a href="shopping_cart1.html" class="login-nav__button button__nav-button"><img
+            src="Platzi_YardSale_Icons/icon_shopping_cart.svg" alt="Shopping cart icon" /></a>
+      </div>
     </div>
+    <div class="login-container">
+      <img class="login-container__logo" src="/Platzi_YardSale_Logos/logo_yard_sale.svg" alt="Page logo" />
+      <div class="login-container__content">
+        <form class="login-container__form" action="/">
+          <label class="login-container__label" for="email">Email address</label>
+          <input id="email" class="login-container__text login-container__text-email" type="email"
+            placeholder="yardsale@example.com" />
+          <label class="login-container__label" for="password">Password</label>
+          <input id="password" class="login-container__text login-container__text-password" type="password"
+            placeholder="********" />
+          <a href="home1.html" class="login-container__button button__primary-button">Log in</a>
+          <a href="password_recovery1.html" class="login-container__fg-password">Forgot my
+            password</a>
+        </form>
+      </div>
+      <a href="create_account.html" class="login-container__button button__secondary-button">Sign
+        up</a>
+      <!-- <button class="login-container__button button__secondary-button" type="submit">Sign up</button> -->
+    </div>
+  </div>
 </body>
 
 </html>

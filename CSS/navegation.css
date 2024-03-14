@@ -108,7 +108,7 @@
 }
 
 .options li {
-  padding: 10px
+  padding: 10px;
 }
 
 .my-orders-option__button {
@@ -174,7 +174,7 @@
   .name-options {
     display: grid;
     grid-template-rows: 50px auto;
-}
+  }
   .global-name-options:hover .options-container {
     display: block;
   }

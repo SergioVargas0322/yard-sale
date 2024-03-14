@@ -60,10 +60,6 @@ body {
 
 /*La configuración de los botones se encuentra en el archivo button.css*/
 
-.button__primary-button {
-  margin-top: 30px;
-}
-
 .login-container__fg-password {
   text-align: center;
   color: var(--hospital-green);
@@ -73,6 +69,15 @@ body {
 }
 
 .button__secondary-button {
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  place-self: end center;
+}
+
+.button__primary-button {
+  margin-top: 30px;
   margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
