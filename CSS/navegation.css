@@ -10,11 +10,15 @@
 
   grid-template-columns: 50px 1fr 50px;
   /* grid-template-rows: 250px; */
-  grid-template-rows: 50px;
+  grid-template-rows: 70px;
+
+  box-shadow: 0px 14px 14px -20px var(--very-light-pink);
 
   position: sticky;
   top: 0;
   align-self: start;
+
+  z-index: 2;
 }
 
 .global-nav__page-left-logo {
@@ -271,7 +275,7 @@
   .global-nav__page-left-logo {
     width: 100%;
     display: grid;
-    place-items: center;
+    place-items: center start;
   }
   .global-nav__page-central-logo {
     display: none;
